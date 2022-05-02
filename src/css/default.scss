@@ -1,7 +1,7 @@
 $default-font: 14px;
 $default-pc-font: .98vw;
 $default-mobile-font: 4.385vw;
-$pc-point: 1439px;
+$pc-point: 1440px;
 $mobile-point: 768px;
 
 body {
@@ -39,25 +39,24 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 @mixin centerX {
 	left: 50%;
-	-webkit-transform: translateX(-50%) + translate3d(0, 0, 0);
-	-moz-transform: translateX(-50%) + translate3d(0, 0, 0);
-	-ms-transform: translateX(-50%) + translate3d(0, 0, 0);
-	-o-transform: translateX(-50%) + translate3d(0, 0, 0);
-	transform: translateX(-50%) + translate3d(0, 0, 0);
+	-webkit-transform: translateX(-50%) +' '+ translate3d(0, 0, 0);
+	-moz-transform: translateX(-50%) +' '+ translate3d(0, 0, 0);
+	-ms-transform: translateX(-50%) +' '+ translate3d(0, 0, 0);
+	-o-transform: translateX(-50%) +' '+ translate3d(0, 0, 0);
+	transform: translateX(-50%) +' '+ translate3d(0, 0, 0);
 }
 
 @mixin centerY {
 	top: 50%;
-	-webkit-transform: translateY(-50%) + translate3d(0, 0, 0);
-	-moz-transform: translateY(-50%) + translate3d(0, 0, 0);
-	-ms-transform: translateY(-50%) + translate3d(0, 0, 0);
-	-o-transform: translateY(-50%) + translate3d(0, 0, 0);
-	transform: translateY(-50%) + translate3d(0, 0, 0);
+	-webkit-transform: translateY(-50%) +' '+ translate3d(0, 0, 0);
+	-moz-transform: translateY(-50%) +' '+ translate3d(0, 0, 0);
+	-ms-transform: translateY(-50%) +' '+ translate3d(0, 0, 0);
+	-o-transform: translateY(-50%) +' '+ translate3d(0, 0, 0);
+	transform: translateY(-50%) +' '+ translate3d(0, 0, 0);
 }
 
 @mixin bg-image($img,$posX,$posY,$size){
-	background: url($img) no-repeat $posX $posY;
-	background-size: $size;
+	background: url($img) no-repeat $posX $posY / $size;
 }
 
 @mixin transform($function) {
