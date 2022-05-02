@@ -1,7 +1,7 @@
 {
-  "name": "player",
+  "name": "simple",
   "version": "1.0.0",
-  "description": "simple personal music player",
+  "description": "simple",
   "scripts": {
     "serve": "webpack serve --open --hot",
     "build": "webpack"
